@@ -1,7 +1,7 @@
 # ⚡️国家电网电力获取
 
 ## 简介
-本项目是将项目[sgcc_electricity_web](https://github.com/Javedhd/sgcc_electricity_web)的接口信息转换为HomeAssistant的实体
+本项目是将项目[sgcc_electricity_web](https://github.com/Javedhd/sgcc_electricity_web)的接口信息转换为HomeAssistant的实体  
 ![card](assets/card.png)
 
 ## 安装与部署
@@ -18,9 +18,9 @@ git clone https://github.com/Javedhd/sgcc_electricity_client.git
 
 ## 配置sgcc_electricity_client
 1. HomeAssistant中打开设置->设备与服务->添加集成
-2. 搜索“国家电网信息”
+2. 搜索“国家电网信息”  
 ![国家电网信息](assets/add_sgcc_electricity_client.png)
-3. 配置sgcc_electricity_web的服务地址
+3. 配置sgcc_electricity_web的服务地址  
 ![服务地址](assets/config_addr.png)
 4. 点击提交
 
