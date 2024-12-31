@@ -1,0 +1,9 @@
+{
+  "domain": "sgcc_electricity",
+  "name": "国家电网客户端",
+  "codeowners": ["Javed"],
+  "config_flow": true,
+  "documentation": "",
+  "iot_class": "cloud_polling",
+  "version": "0.0.1"
+}

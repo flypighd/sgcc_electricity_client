@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "addr": {
+        "title": "国家电网信息",
+        "description": "用户获取国家电网Web获取的数据",
+        "data": {
+          "addr": "服务器地址与端口"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "网络异常",
+      "no_user": "未查询到内容,请检查国家电网web服务器可正常获取数据",
+      "invalid_format": "请按格式 http(s)://host:port 输入",
+      "unknown": "未知错误"
+    },
+    "abort": {
+      "already_configured": "地址已添加，请勿重复添加"
+    }
+  }
+}
