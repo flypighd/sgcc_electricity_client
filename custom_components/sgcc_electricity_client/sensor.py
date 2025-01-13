@@ -67,9 +67,8 @@ async def async_setup_entry(
 ) -> None:
     coordinator = ElectricityCoordinator(hass)
     await coordinator.async_config_entry_first_refresh()
-    electricity: Electricity = hass.data[DOMAIN]
-    user_list = electricity.get_user_list()
-    for user_id in user_list:
+    
+    for user_id in coordinator.data.keys():
         async_add_entities(
             [ElectricitySensor(user_id, sensor_type, entry.entry_id, coordinator) for sensor_type in SENSOR_TYPES]
         )

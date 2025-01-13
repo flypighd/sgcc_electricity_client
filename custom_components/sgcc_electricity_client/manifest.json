@@ -3,7 +3,7 @@
   "name": "国家电网客户端",
   "codeowners": ["Javed"],
   "config_flow": true,
-  "documentation": "",
+  "documentation": "https://github.com/Javedhd/sgcc_electricity_client",
   "iot_class": "cloud_polling",
   "version": "0.0.1"
 }
