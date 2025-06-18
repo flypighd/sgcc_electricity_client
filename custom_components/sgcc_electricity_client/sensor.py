@@ -56,6 +56,20 @@ SENSOR_TYPES = [
         "device_class": SensorDeviceClass.MONETARY,
         "state_class": SensorStateClass.TOTAL
     },
+        {
+        "key": "daily_ele_num",
+        "name": "每日用电量",
+        "native_unit_of_measurement": UnitOfEnergy.KILO_WATT_HOUR,
+        "device_class": SensorDeviceClass.ENERGY,
+        "state_class": SensorStateClass.TOTAL
+    },
+    {
+        "key": "daily_ele_cost",
+        "name": "每日电费",
+        "native_unit_of_measurement": UNIT_YUAN,
+        "device_class": SensorDeviceClass.MONETARY,
+        "state_class": SensorStateClass.TOTAL
+    },
     {
         "key": "refresh_time",
         "name": "最近刷新时间"
