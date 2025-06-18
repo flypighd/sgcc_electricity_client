@@ -47,7 +47,8 @@ class Electricity:
         result = []
         if r.status == 200:
             result = json.loads(await r.read())
-        self._data[user_id]["dailys"] = result
+        self._data[user_id]["daily_ele_num"] = result["usage"]
+        self._data[user_id]["daily_ele_cost"] = result["charge"]
 
     async def async_get_latest_month(self, user_id):
         r = await self._session.get(LATEST_MONTH_URL.format(addr=self._addr, user_id=user_id), timeout=10)
